@@ -1,0 +1,20 @@
+tasks:
+  - id: rotate-api-key
+    title: Rotate an API key safely
+    description: Replace an API key without downtime or authentication failures.
+    category: security
+    status: published
+    deprecated_redirect: null
+    last_verified: 2026-01-15
+    synonyms:
+      - change api key
+      - replace api key
+      - key rotation
+    path: /how-to/rotate-api-key
+    roles: [admin, developer]
+    pitfalls:
+      - trigger: 401 errors after revocation
+        resolution: Roll back to dual-key mode and identify missed service/env
+    related:
+      - /reference/api-authentication
+      - /explanation/secret-management
