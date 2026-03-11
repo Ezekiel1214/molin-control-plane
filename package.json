@@ -1,8 +1,39 @@
 {
   "name": "molin-docs-control-plane",
-  "private": true,
+  "description": "Documentation governance controls with schema validation, path checks, staleness audits, and a demo static site.",
   "type": "module",
   "version": "1.0.0",
+  "license": "MIT",
+  "author": "Ezekiel1214",
+  "homepage": "https://github.com/Ezekiel1214/molin-control-plane#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ezekiel1214/molin-control-plane.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ezekiel1214/molin-control-plane/issues"
+  },
+  "keywords": [
+    "documentation",
+    "docs",
+    "governance",
+    "schema-validation",
+    "staleness-audit",
+    "netlify",
+    "static-site"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "docs",
+    "scripts",
+    "shop",
+    "tasks.schema.json",
+    "README.md",
+    "HANDOVER.md",
+    "netlify.toml"
+  ],
   "scripts": {
     "validate:schema": "node scripts/validate-schema.mjs",
     "audit:staleness": "node scripts/audit-staleness.mjs",
