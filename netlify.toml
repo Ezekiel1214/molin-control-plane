@@ -1,0 +1,5 @@
+[build]
+publish = "shop"
+
+[build.environment]
+NODE_VERSION = "24"
