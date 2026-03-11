@@ -1,20 +1,20 @@
 tasks:
   - id: rotate-api-key
-    title: Rotate an API key safely
-    description: Replace an API key without downtime or authentication failures.
-    category: security
+    title: Demo shop landing page
+    description: Static catalog landing page used as the Molin validation target.
+    category: demo
     status: published
     deprecated_redirect: null
-    last_verified: 2026-01-15
+    last_verified: "2026-01-15"
     synonyms:
-      - change api key
-      - replace api key
-      - key rotation
-    path: /how-to/rotate-api-key
+      - storefront
+      - demo catalog
+      - shop home
+    path: /
     roles: [admin, developer]
     pitfalls:
-      - trigger: 401 errors after revocation
-        resolution: Roll back to dual-key mode and identify missed service/env
+      - trigger: Broken homepage path after deploy
+        resolution: Verify the shop build output and keep index.html at the site root
     related:
-      - /reference/api-authentication
-      - /explanation/secret-management
+      - /products/product-1
+      - /products/product-2
